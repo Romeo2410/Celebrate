@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Years of Love</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+            <script src="celebrations.js"></script>
+            <link rel="stylesheet" href="celebrations.css">
+    
+</head>
+
+<body>
+    <section class="hero">
+        <div class="floating-hearts">
+            <div class="heart">❤</div>
+            <div class="heart">❤</div>
+            <div class="heart">❤</div>
+            <div class="heart">❤</div>
+            <div class="heart">❤</div>
+        </div>
+        <div class="hero-content">
+            <div class="anniversary-number">25</div>
+            <h1>Years of Love</h1>
+            <p class="hero-subtitle">Celebrating Mamu & Maami Ji's Silver Anniversary</p>
+            <div class="cta-buttons">
+                <button class="btn btn-light" onclick="scrollToTimeline()">Our Story</button>
+                <button class="btn btn-light" onclick="openWishModal()">Leave a Wish</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Mamu & Maami Ji's Journey Together</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2000</div>
+                    <h3>The Beginning</h3>
+                    <p>Two hearts united in love, embarking on a beautiful journey together. A day filled with promises,
+                        dreams, and endless possibilities.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2005</div>
+                    <h3>Growing Family</h3>
+                    <p>Our family expanded, bringing new joy and laughter into our lives. Every moment became a precious
+                        memory to cherish.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2012</div>
+                    <h3>Adventures Together</h3>
+                    <p>From quiet moments at home to grand adventures around the world, every experience strengthened
+                        our bond.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2018</div>
+                    <h3>Milestone Moments</h3>
+                    <p>Celebrating achievements, overcoming challenges, and supporting each other through thick and
+                        thin.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2026</div>
+                    <h3>Silver Anniversary</h3>
+                    <p>25 years of unwavering love, countless memories, and a bond that grows stronger with each passing
+                        day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: white;">
+        <h2 class="section-title">25 Years in Numbers</h2>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">9,497</div>
+                <div class="stat-label">Days Together</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Memories Made</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Hearts United</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Forever Love</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Memory Gallery</h2>
+        <p
+            style="text-align: center; color: #666; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Click on each card to reveal a beautiful memory 💛
+        </p>
+
+        <div class="gallery">
+
+            <!-- CARD 1 -->
+            <div class="gallery-item memory-card" onclick="flipCard(this)">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-card-front-content">
+                            <div class="emoji">🌸</div>
+                            <div class="title">Everyday Joys</div>
+                            <div class="click-hint">Click to flip</div>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <img src="images/everyday.jpeg" alt="Wedding Memory"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="gallery-item memory-card" onclick="flipCard(this)">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-card-front-content">
+                            <div class="emoji">📸</div>
+                            <div class="title">Captured Moments</div>
+                            <div class="click-hint">Click to flip</div>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <img src="images/moments.jpeg" alt="Home Memory"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="gallery-item memory-card" onclick="flipCard(this)">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-card-front-content">
+                            <div class="emoji">✈️</div>
+                            <div class="title">Adventures</div>
+                            <div class="click-hint">Click to flip</div>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <img src="images/tour.jpeg" alt="Travel Memory"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="gallery-item memory-card" onclick="flipCard(this)">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-card-front-content">
+                            <div class="emoji">🎉</div>
+                            <div class="title">Celebrations</div>
+                            <div class="click-hint">Click to flip</div>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <img src="images/celebrations.jpeg" alt="Celebration Memory"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="gallery-item memory-card" onclick="flipCard(this)">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-card-front-content">
+                            <div class="emoji">☕</div>
+                            <div class="title">Daily Moments</div>
+                            <div class="click-hint">Click to flip</div>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <img src="images/daily.jpeg" alt="Daily Life Memory"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="gallery-item memory-card" onclick="flipCard(this)">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-card-front-content">
+                            <div class="emoji">💝</div>
+                            <div class="title">Forever Love</div>
+                            <div class="click-hint">Click to flip</div>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <img src="images/forever.jpeg" alt="Love Memory"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Hidden file input for photo uploads -->
+    <input type="file" id="photoInput" accept="image/*" style="display: none;" onchange="handlePhotoUpload(event)">
+
+
+    <section class="section message-section">
+        <h2 class="section-title" style="color: var(--light);">A Message of Love</h2>
+        <div class="message-box">
+            <p>"Dear Mamu and Maami Ji, 25 years ago, you began a beautiful journey together, and watching your love
+                grow stronger with each passing year has been truly inspiring. Your bond is a testament to patience,
+                understanding, and unwavering commitment."</p>
+            <p>"Thank you for being such wonderful role models and for showing us what true love looks like. Here's to
+                the countless memories you've created and the many more beautiful moments that await you."</p>
+            <div class="signature">With Love, Rupak ❤</div>
+            <div class="wish-button-container">
+                <button class="btn" onclick="openWishModal()">Share Your Wishes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wish Modal -->
+    <div id="wishModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeWishModal()">&times;</button>
+                <h3>Share Your Wishes</h3>
+                <div class="modal-subtitle">For Mamu & Maami Ji's 25th Anniversary</div>
+            </div>
+            <div class="modal-body">
+                <div class="wish-icon">💌</div>
+                <div class="wish-input-container">
+                    <textarea id="wishText"
+                        placeholder="Pour your heart out... Share your warmest wishes, fondest memories, or words of love and encouragement for this beautiful couple..."
+                        maxlength="500"></textarea>
+                    <div class="char-counter"><span id="charCount">0</span>/500 characters</div>
+                </div>
+                <div class="modal-buttons">
+                    <button class="btn" onclick="submitWish()">✨ Send With Love</button>
+                    <button class="btn" onclick="closeWishModal()"
+                        style="background: transparent; color: #666;">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Celebration Button -->
+    <button class="celebration-button" onclick="triggerCelebration()" title="Click to celebrate!">🎊</button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Confetti Container -->
+    <div id="confetti" class="confetti"></div>
+
+    <!-- Wishes Display Section -->
+    <section class="section" id="wishesSection" style="display: none;">
+        <h2 class="section-title">Heartfelt Wishes</h2>
+        <div class="wishes-display" id="wishesContainer"></div>
+    </section>
+
+    <footer class="footer">
+        <p>Celebrating Mamu & Maami Ji's 25 Years of Love, Laughter, and Togetherness</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.6;">With Love from Rupak 💝</p>
+    </footer>
+
+
+</body>
+
+</html>
